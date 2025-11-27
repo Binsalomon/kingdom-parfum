@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kingdom Parfum Oils</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-gem me-2"></i>Kingdom Parfum Oils
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Fragrances</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <h1>Discover Your Signature Scent</h1>
+            <p>Immerse yourself in the world of luxury fragrances. Each perfume tells a unique story, crafted with precision and passion.</p>
+            <a href="#products" class="btn btn-outline-light btn-lg">Explore Collection</a>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Unique Scents</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-number">25</div>
+                        <div class="stat-label">Years of Excellence</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Countries</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6 mb-4">
+                    <div class="stat-item">
+                        <div class="stat-number">98%</div>
+                        <div class="stat-label">Client Satisfaction</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Our Fragrance Collection</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="text-center mb-5">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="women">Women</button>
+                <button class="filter-btn" data-filter="men">Men</button>
+                <button class="filter-btn" data-filter="unisex">Unisex</button>
+            </div>
+            
+            <!-- Products Grid -->
+            <div class="row" id="product-grid">
+                <!-- Product cards will be dynamically generated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredient Highlights -->
+    <section class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="ingredient-highlight">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-rose"></i>
+                        </div>
+                        <h4>Premium Ingredients</h4>
+                        <p>We source the finest raw materials from around the world to ensure exceptional quality.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ingredient-highlight">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-wind"></i>
+                        </div>
+                        <h4>Long-Lasting Scents</h4>
+                        <p>Our fragrances are crafted to maintain their character throughout the day.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="ingredient-highlight">
+                        <div class="ingredient-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h4>Natural Essences</h4>
+                        <p>We prioritize natural extracts and essences for an authentic olfactory experience.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parallax Section -->
+    <section class="parallax-section">
+        <div class="container">
+            <h2 class="mb-4">Crafting Memories Through Scent</h2>
+            <p class="lead">Each fragrance tells a story, evoking emotions and creating lasting impressions.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="section-title text-start">Our Story</h2>
+                    <p>Founded in 2020, Élégance has been crafting exceptional fragrances that capture the essence of luxury and sophistication. Our master perfumers combine traditional techniques with innovative approaches to create scents that are both timeless and contemporary.</p>
+                    <p>Each fragrance is meticulously developed using the finest ingredients sourced from around the world. We believe that a signature scent is more than just a fragrance—it's an expression of personality, a memory, and an experience.</p>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-outline-light me-3">Contact Us</a>
+                        <a href="#products" class="btn btn-light">View Collection</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-6 mb-4">
+                            <div class="text-center p-4 bg-dark rounded">
+                                <i class="fas fa-award fa-3x mb-3" style="color: var(--secondary-color);"></i>
+                                <h4>Premium Quality</h4>
+                                <p>Only the finest ingredients</p>
+                            </div>
+                        </div>
+                        <div class="col-6 mb-4">
+                            <div class="text-center p-4 bg-dark rounded">
+                                <i class="fas fa-leaf fa-3x mb-3" style="color: var(--secondary-color);"></i>
+                                <h4>Eco-Friendly</h4>
+                                <p>Sustainable practices</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center p-4 bg-dark rounded">
+                                <i class="fas fa-handshake fa-3x mb-3" style="color: var(--secondary-color);"></i>
+                                <h4>Ethical Sourcing</h4>
+                                <p>Supporting local communities</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center p-4 bg-dark rounded">
+                                <i class="fas fa-star fa-3x mb-3" style="color: var(--secondary-color);"></i>
+                                <h4>5-Star Reviews</h4>
+                                <p>Loved by thousands</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonial-section bg-light">
+        <div class="container">
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "The Midnight Rose fragrance is absolutely captivating. I receive compliments every time I wear it!"
+                        </div>
+                        <div class="testimonial-author">- Sophia Laurent</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "As a perfume collector, I can confidently say Élégance offers some of the most sophisticated scents available."
+                        </div>
+                        <div class="testimonial-author">- James Wilson</div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            "The longevity of these fragrances is impressive. A true mark of quality craftsmanship."
+                        </div>
+                        <div class="testimonial-author">- Isabella Rossi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info">
+                        <i class="fas fa-phone"></i>
+                        <h4>Phone</h4>
+                        <p>+256742234400</p>
+                        <p>+256742234400</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info">
+                        <i class="fas fa-envelope"></i>
+                        <h4>Email</h4>
+                        <p>info@elegance.com</p>
+                        <p>perfume@oils.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="contact-info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Address</h4>
+                        <p>UGANDA / KAMPALA</p>
+                        <p>Intebbe Road, Namasuba, Batabata</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <h4 class="mb-3">Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0">
+                    <h4 class="mb-4">
+                        <i class="fas fa-gem me-2"></i>Kingdom Parfum
+                    </h4>
+                    <p>Kingdom Parfum Oils crafted with passion and precision. Experience the art of perfumery.</p>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-4">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-light text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#products" class="text-light text-decoration-none">Fragrances</a></li>
+                        <li class="mb-2"><a href="#about" class="text-light text-decoration-none">Our Story</a></li>
+                        <li class="mb-2"><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="mb-4">Information</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Shipping Info</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Returns</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-light text-decoration-none">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3">
+                    <h5 class="mb-4">Newsletter</h5>
+                    <p>Subscribe to receive updates on new fragrances and exclusive offers.</p>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-outline-light" type="button">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-light">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2025 Kingdom Parfum Oils. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <p class="mb-0">Designed by <i>BinSalomon</i></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="script.js">
+    </script>
+</body>
+</html>
